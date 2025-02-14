@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronostics Paris Sportifs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #subscribe {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        #subscribe h2 {
+            margin-top: 0;
+        }
+        #subscribe form {
+            display: flex;
+            flex-direction: column;
+        }
+        #subscribe label {
+            margin-bottom: 5px;
+        }
+        #subscribe input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #subscribe button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #subscribe button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const subscriptionForm = document.getElementById('subscriptionForm');
+            subscriptionForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const phoneNumber = document.getElementById('phoneNumber').value;
+                // Ici, vous pouvez ajouter la logique pour traiter le paiement via Orange Money
+                alert(Abonnement en cours pour le numéro : ${phoneNumber});
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pronostics Sportifs</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#pronostics">Pronostics</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Les derniers pronostics</h2>
+            <p>Découvrez nos derniers pronostics et analyses pour les prochains matchs.</p>
+        </section>
+        <section id="pronostics">
+            <h2>Pronostics à venir</h2>
+            <!-- Contenu dynamique ici -->
+        </section>
+        <section id="blog">
+            <h2>Articles de Blog</h2>
+            <!-- Articles de blog ici -->
+        </section>
+        <section id="subscribe">
+            <h2>Abonnement Quotidien</h2>
+            <p>Abonnez-vous pour 200 CFA par jour pour accéder à tous nos pronostics.</p>
+            <form id="subscriptionForm">
+                <label for="phoneNumber">Numéro de téléphone (Orange Money):</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <button type="submit">S'abonner</button>
+            </form>
+            <p>Paiement au numéro : +226 05 85 33 67</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pronostics Sportifs</p>
+    </footer>
+</body>
+</html>
